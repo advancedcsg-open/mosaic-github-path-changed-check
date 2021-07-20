@@ -1,0 +1,15 @@
+name: 'Mosaic github path changed check'
+description: 'Verified if there were any changes under a path since the selected tag/commit.'
+inputs:
+  path:
+    description: 'Path to verify for changes'
+    required: true
+  git-point:
+    description: 'Point from which action verifies if there were any changes. Either a git tag or commit hash. Will use latest tag or first commit if not provided.'
+    require: false
+outputs:
+  path-changed:
+    description: 'Flag specifying if the path was changed'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
