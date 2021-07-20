@@ -20,7 +20,7 @@ Flag if there were any changes for the path
 ## Example usage
 
 ```
-uses: actions/mosaic-github-path-changed-check@v1.0
+uses: advancedcsg-open/mosaic-github-path-changed-check@v1.0
 with:
     path: 'projects'
     git-point: 'v1.0.0'
